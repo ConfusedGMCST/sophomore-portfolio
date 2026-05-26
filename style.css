@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lexend-light {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    font-family: Lexend;
+    width: 100%;
+}
+
+.flex-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;           
+    padding: 10px 20px;            
+}
+
+.align-left h1 {
+    margin: 0;
+}
+
+.github {
+    margin-left: 10%;
+    display: flex;
+    align-items: center;           
+    gap: 10px;                     
+}
+
+.github h2 {
+    margin: 0;
+    font-size: 1.5rem;             
+}
+
+.githubLogo {
+    width: 32px;                   
+    height: 32px;
+    display: block;
+}
