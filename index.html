@@ -3,54 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chPortfolio</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
     </style>
-    <title>chPortfolio</title>
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <div class="flex-div">
-        <div>
+
+    <header class="navbar">
+        <div class="brand">
             <h1>C. Haase</h1>
         </div>
-        <div class="align-right">
-            <div class="flex-div">
-                <div class="about">
-                    <h1>About</h1>
+        <nav class="nav-links">
+            <span class="nav-item">About</span>
+            <span class="nav-item">
+                GitHub
+                <img src="github-svgrepo-com.svg" alt="GitHub Logo" class="github-logo">
+            </span>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.22" x2="5.64" y2="17.78"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main class="portfolio-container">
+        <h2 class="section-title">Selected Projects</h2>
+        
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="Bully-Bot.jpg" alt="Bully Bot Project Screenshot">
                 </div>
-                <div class="github">
-                    <h1>Github</h1>
-                    <img src="github-svgrepo-com.svg" alt="" class="githubLogo">
+                <div class="project-info">
+                    <h2>Bully Bot</h2>
+                    <h3>A lightweight Python automation tool designed to streamline project management by sending polite follow-ups to project partners.</h3>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="database.jpg" alt="Repair Database Project Screenshot">
+                </div>
+                <div class="project-info">
+                    <h2>Repair Database</h2>
+                    <h3>A centralized, production-ready web database tailored for IT teams to log, track, and manage hardware repairs efficiently.</h3>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="hoi4-modatron-300.jpg" alt="Hoi4Modatron3000 Project Screenshot">
+                </div>
+                <div class="project-info">
+                    <h2>Hoi4Modatron3000</h2>
+                    <h3>A development assistance utility engineered to optimize workflow timelines for Hearts of Iron IV custom mod creation.</h3>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="SDL3.jpg" alt="Primitive SDL3 Game Engine Screenshot">
+                </div>
+                <div class="project-info">
+                    <h2>Primitive SDL3 Game Engine</h2>
+                    <h3>A low-level graphic engine written using SDL3 framework, built to understand core engine architecture, rendering pipelines, and asset loading.</h3>
                 </div>
             </div>
         </div>
-    </div>
-    <div>
-        <div class="flex-div grid-row">
-            <div class="project-card">
-                <h2>Bully Bot</h2>
-                <img src="" alt="placeholder">
-                <h3>"lil python script for reminding project partners to finish their portion"</h3>
-            </div>
-            <div class="project-card">
-                <h2>Repair Database</h2>
-                <img src="" alt="placeholder">
-                <h3>A database website for logging chromebook repairs for the repair team</h3>
-            </div>
-        </div>
-        <div class="flex-div grid-row">
-            <div class="project-card">
-                <h2>Hoi4Modatron3000</h2>
-                <img src="" alt="placeholder">
-                <h3>WIP Simple tool for assisting in Hoi4 mod creation</h3>
-            </div>
-            <div class="project-card">
-                <h2>Primative SDL3 Game Engine</h2>
-                <img src="" alt="placeholder">
-                <h3>SDL3 game engine with the intent of making a game but no game</h3>
-            </div>
-        </div>
-    </div>
+    </main>
+
 </body>
 </html>
