@@ -277,6 +277,12 @@ body.dark-mode .sun-icon {
     transition: color 0.3s ease;
 }
 
+/* about style section below */
+
+#greeting {
+    transition: opacity 0.3s ease;
+}
+
 .about-layout {
     display: grid;
     grid-template-columns: 2fr 1fr;
